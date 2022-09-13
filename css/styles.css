@@ -588,6 +588,8 @@ a {
   flex-direction: column;
   gap: 9px;
   margin-top: 20px;
+  position: relative;
+  
 }
 
 .addres-com {
@@ -597,6 +599,9 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
   width: 231px;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
 }
 
 .contacts {
@@ -605,6 +610,9 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff99;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
 }
 
 .addres-com:hover,
