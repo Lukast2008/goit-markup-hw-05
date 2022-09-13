@@ -32,7 +32,7 @@
         <nav class="nav-item">
           <ul class="nav-menu">
             <li class="nav-style">
-              <a class="nav-text-sel" href="./index.html">Студія</a>
+              <a class="nav-text current" href="./index.html">Студія</a>
             </li>
 
             <li class="nav-style">
@@ -75,7 +75,9 @@
         <div class="container posstion-hero">
           <h1 class="header-h1">Ефективні рішення для вашого бізнесу</h1>
 
-          <button class="btn" type="button">Замовити послугу</button>
+          <button class="btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -149,28 +151,31 @@
           <h2 class="what-header">Чим ми займаємося</h2>
 
           <ul class="what-list">
-            <li>
+            <li class="img-label">
               <img
                 width="370"
                 src="images/img.jpg"
                 alt="programer-working-his-desk-office"
               />
+              <p class="label">Десктопні додатки</p>
             </li>
 
-            <li>
+            <li class="img-label">
               <img
                 width="370"
                 src="images/img1.jpg"
                 alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones"
               />
+              <p class="label">Мобільні додатки</p>
             </li>
 
-            <li>
+            <li class="img-label">
               <img
                 width="370"
                 src="images/img2.jpg"
                 alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet"
               />
+              <p class="label">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -433,6 +438,18 @@
         </div>
       </div>
     </footer>
+    
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-button-icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
