@@ -694,6 +694,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  
 }
 
 .project-link {
@@ -727,10 +728,10 @@ a {
   z-index: 0;
 }
 
-.project-link:hover,
+.project-item:hover,
 .project-link:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .project-link:hover .overlay {
@@ -741,6 +742,7 @@ a {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  
 }
 
 .project-name {
