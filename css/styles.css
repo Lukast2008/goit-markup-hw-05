@@ -446,6 +446,7 @@ a {
   padding-left: 32px;
   padding-right: 32px;
   margin-top: 16px;
+  cursor: pointer;
 }
 
 .link-social {
@@ -455,31 +456,17 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: var(--timing);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.instagram,
-.linkedin {
-  width: 20px;
-  height: 20px;
-}
-
-.twiter {
-  width: 20px;
-  height: 16px;
-}
-
-.facebook {
-  width: 10px;
-  height: 20px;
-}
 
 .social-icon {
+  width: 20px;
+  height: 20px;
   fill: var(--icon-client);
-  cursor: pointer;
-  transition-property: background-color, fill;
+  transition-property: fill;
   transition-duration: var(--timing);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -487,13 +474,11 @@ a {
 .link-social:hover,
 .link-social:focus {
   background-color: var(--brand-color--);
-  fill: currentColor;
 }
 
 .link-social:hover .social-icon,
 .link-social:focus .social-icon {
   fill: var(--main-color--);
-  stroke: var(--main-color--);
 }
 
 /* customers */
@@ -528,7 +513,7 @@ a {
   height: 100%;
   border: 1px solid var(--icon-client);
   border-radius: 4px;
-  transition-property: border, fill;
+  transition-property: border;
   transition-duration: var(--timing);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -537,7 +522,7 @@ a {
   width: 106px;
   height: 60px;
   fill: var(--icon-client);
-  transition-property: border, fill;
+  transition-property:  fill;
   transition-duration: var(--timing);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -641,11 +626,13 @@ a {
 }
 
 .link-social {
-  background-color: RGBA(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-icon {
   fill: #fff;
+  width: 20px;
+  height: 20px;
 }
 
 /* portfolio */
@@ -694,8 +681,8 @@ a {
 .filter-btn:focus {
   background-color: var(--brand-color--);
   color: var(--main-color--);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0 1px 2px 0 rgba(0, 0, 0, 0.8), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .project-items {
@@ -705,9 +692,10 @@ a {
   
 }
 
-.project-link {
-  overflow: hidden;
+.project-link{
+  display: block;
 }
+
 
 .project-item {
   width: 370px;
@@ -721,29 +709,29 @@ a {
 .overlay {
   position: absolute;
   left: 0;
-  bottom: -100%;
-  display: block;
+  bottom: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--main-color--);
+  transform: translateY(100%);
   transition-property: transform, color;
   transition-duration: var(--timing);
-  z-index: 0;
 }
 
-.project-item:hover,
+.project-link:hover,
 .project-link:focus {
  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
   0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.project-link:hover .overlay {
-  transform: translateY(-100%);
+.project-link:hover .overlay,
+.project-link:focus .overlay{
+  transform: translateY(0);
 }
 
 .project-border {
@@ -818,15 +806,12 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: none;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-button-icon {
-  padding: 0;
-  display: flex;
-  cursor: pointer;
-  background-color: #ffffff;
-  border-radius: 50%;
+  
+
 }
